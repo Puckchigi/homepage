@@ -1,0 +1,76 @@
+@font-face {
+  font-family : 'GothicA1-Thin'
+  src:url(../font/GothicA1-Thin.ttf) format('truetype');
+}
+
+main h1 {
+  padding:10px;
+  font-family: 'GothicA1-Thin';
+  font-size:2rem;
+  text-align: center;
+  font-weight: 100;
+}
+/* date */
+main h2 {
+  border-bottom:1px solid #000000;
+  padding-bottom: 30px;
+  font-family: 'GothicA1-Thin';
+  color:#BDBDBD;
+  font-size:1rem;
+  text-align: center;
+  font-weight: 100;
+  font-style: italic;
+}
+
+main p {
+  font-family: 'NanumGothic', sans-serif;
+  font-size:1rem;
+  line-height: 200%;
+}
+img {
+  display:block;
+  margin:0px auto;
+}
+.share{
+  display: flex;
+  float:left;
+  border-right:0.5px solid #EAEAEA;
+  border-left:0.5px solid #EAEAEA;
+  padding:10px 50px 10px 50px;
+  width: 1000px;
+}
+.sharebox{
+  display: block;
+  padding-top: 10px;
+  border-top: 1px solid #8C8C8C;
+  font-size: 15sspx;
+  font-family: sans-serif;
+  color:#8C8C8C;
+
+}
+
+.hashtag{
+  display: flex;
+  border-right:0.5px solid #EAEAEA;
+  border-left:0.5px solid #EAEAEA;
+  padding:50px;
+  width: 1000px;
+}
+
+.hashtag li{
+  display: block;
+  color:black;
+  list-style-type: none;
+  }
+
+.hashtag > li > a{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  margin:10px 7px;
+  padding: 10px 15px;
+}
+
+.hashtag > li > a:hover {
+  color: red;
+}
