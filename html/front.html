@@ -7,70 +7,44 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Gothic+Coding&display=swap&subset=korean" rel="stylesheet">
     <script src="../js/jquery-3.4.1.min.js"></script>
     <script src="../js/pinterest_grid.js"></script>
-
     <script>
 $(document).ready(function() {
+
+$('#common').load("common.html");
+
 $('#demo').pinterest_grid({
-no_columns: 4,
-padding_x: 10,
-padding_y: 10,
+no_columns: 2,
+padding_x: 80,
+padding_y: 80,
 margin_bottom: 50,
 single_column_breakpoint: 700
 });
+
+$('#sub').pinterest_grid({
+  no_columns: 3,
+  padding_x: 50,
+  padding_y: 50,
+  margin_bottom: 50,
+  single_column_breakpoint: 700
+});
+
 });
 </script>
-
     <title>JayHoon's Era</title>
 </head>
 
 <body>
-        <header>
-            <h1>제이훈's Era</h1>
-        </header>
-        <nav id="main-nav" role="navigation">
-    <ul id="main-menu">
-      <li><a href="front.html">Home</a></li>
-      <li><a href="#">Egineering</a>
-        <!-- <ul id="sub-menu">
-          <li><a href="#" aria-label="subemnu">반도체 장비</a></li>
-          <li><a href="#" aria-label="subemnu">반도체/전자</a></li>
-          <li><a href="#" aria-label="subemnu">흠흠</a></li>
-          <li><a href="#" aria-label="subemnu">흠흠</a></li>
-        </ul> -->
-      </li>
-      <li><a href="#">Project</a>
-        <!-- <ul id="sub-menu">
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-        </ul> -->
-      </li>
-      <li><a href="#">Issue</a>
-        <!-- <ul id="sub-menu">
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-          <li><a href="#" aria-label="subemnu">submenu</a></li>
-        </ul> -->
-      </li>
-      <li><a href="#">Culture</a></li>
-      <li><a href="#">Insight</a></li>
-      <li><a href="#">일상</a></li>
-    </ul>
-  </nav>
-
+<!-- common -->
+<div id="common"></div>
+<!-- common -->
         <div class="inform">
           현재 위치
         </div>
-<!-- common sector -->
 
 <div class="container">
 <section class="content">
     <main>
       <div id="demo">
-
         <article class="white-panel">
           <img src="1.jpg" alt="ALT">
           <h1><a href="#">Title 1</a></h1>
@@ -82,29 +56,35 @@ single_column_breakpoint: 700
           <h1><a href="#">Title 1</a></h1>
           <p>Description 1</p>
         </article>
-
-        <article class="white-panel">
-          <img src="1.jpg" alt="ALT">
-          <h1><a href="#">Title 1</a></h1>
-          <p>Description 1</p>
-        </article>
-
-        <article class="white-panel">
-          <img src="1.jpg" alt="ALT">
-          <h1><a href="#">Title 1</a></h1>
-          <p>Description 1</p>
-        </article>
-
-        <article class="white-panel">
-          <img src="1.jpg" alt="ALT">
-          <h1><a href="#">Title 1</a></h1>
-          <p>Description 1</p>
-        </article>
-
-
-
-
       </div>
+
+
+
+  <div id="sub">
+    <article class="new-panel" OnClick="location.href ='#'" style="cursor:pointer;">
+      <img src="1.jpg" alt="ALT">
+      <h1>Title 1</h1>
+      <p>Description 1</p>
+    </article>
+
+  <article class="new-panel" OnClick="location.href ='#'" style="cursor:pointer;">
+      <img src="1.jpg" alt="ALT">
+      <h1>Title 1</h1>
+      <p>Description 1</p>
+    </article>
+
+    <article class="new-panel" OnClick="location.href ='#'" style="cursor:pointer;">
+      <img src="1.jpg" alt="ALT">
+      <h1>Title 1</h1>
+      <p>Description 1</p>
+    </article>
+
+    <article class="new-panel" OnClick="location.href ='#'" style="cursor:pointer;">
+      <img src="1.jpg" alt="ALT">
+      <h1>Title 1</h1>
+      <p>Description 1</p>
+    </article>
+  </div>
 
 
 
@@ -117,6 +97,7 @@ single_column_breakpoint: 700
         <footer>
               Copyright © 2019 by JayHoon a.k.a KJH
         </footer>
+
 
 
 </body>

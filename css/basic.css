@@ -18,6 +18,11 @@ body{
   font-family: 'NanumGothic', sans-serif, arial, 'Nanum Gothic Coding', 'Muli', monospace, "돋움", helvetica;
 }
 
+a {
+  text-decoration: none;
+  color:white;
+}
+
     header{
         background: #005E75;
         height:120px;
@@ -127,6 +132,9 @@ body{
     }
 
 
+    #common{
+      
+    }
 
     /* footer */
     footer{
